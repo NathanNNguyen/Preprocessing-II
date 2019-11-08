@@ -1,1 +1,27 @@
 // Mixins in here
+
+.flex(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-btn(@btn-color:@white, @btn-bg:@button-bg) {
+    color: @btn-color;
+    background: @btn-bg;
+    width: 100%;
+    border-radius: 10%;
+    height: 4rem;
+    font-size: 1.8rem;
+    outline: none;
+}
+
+.bus() {
+    -webkit-animation-name: busAnimated;
+    -webkit-animation-duration: 4s;
+    animation-name: busAnimated;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    position: relative;
+
+}
