@@ -1,1 +1,29 @@
 // Navigation Styles here
+
+.navigation {
+  .flex(space-between, center);
+  font-weight: 700;
+  font-size: 1.7rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  
+  @media @mobile-s {
+    font-size: 1.2rem;
+  }
+
+  @media @mobile {
+    flex-direction: column;
+  }
+}
+
+nav {
+  .flex(space-evenly, center);
+
+  a {
+    padding: 2rem;
+    text-transform: none;
+    text-decoration: none;
+    color: @shark;
+    }
+}
